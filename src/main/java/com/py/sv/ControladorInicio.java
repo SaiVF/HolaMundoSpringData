@@ -32,17 +32,11 @@ public class ControladorInicio {
         persona2.setEmail("jperez@gmail.com");
         persona2.setTelefono("0972622029");
 
-//        List<Persona> personas = new ArrayList();
-//        var personas = new ArrayList();
-//        personas.add(persona);
-//        personas.add(persona2);
-
         var personas = Arrays.asList(persona, persona2);
-//        var personas = Arrays.asList();
 
         model.addAttribute("mensaje", mensaje);
         model.addAttribute("saludo",saludo);
-//        model.addAttribute("persona", persona);
+
         model.addAttribute("personas", personas);
         log.info("ejecutando el controlador Spring MVC");
         return "index";
